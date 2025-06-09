@@ -1,0 +1,19 @@
+[project]
+name = 'accessible-payment_interface'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.accessible-payment_interface]
+path = 'contracts/accessible-payment_interface.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
