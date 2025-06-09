@@ -110,7 +110,6 @@
       { name: name, price: price, available: true }))
   )
 )
-
 ;; Admin function to toggle music availability
 (define-public (toggle-music-availability (music-id uint))
   (let (
