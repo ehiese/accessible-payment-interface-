@@ -121,7 +121,6 @@
     ))
   )
 )
-
 ;; Function to withdraw earnings (owner only)
 (define-public (withdraw-earnings (amount uint))
   (begin
