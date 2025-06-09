@@ -60,7 +60,6 @@
       ;; Record the purchase
       (map-set user-purchases purchase-key 
         { purchased: true, purchase-id: current-purchase-id })
-      
       ;; Increment purchase counter
       (var-set next-purchase-id (+ current-purchase-id u1))
       
