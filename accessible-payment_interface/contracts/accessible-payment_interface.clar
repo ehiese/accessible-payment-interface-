@@ -51,8 +51,7 @@
     (asserts! (get available music-info) err-invalid-music)
     
     ;; Check if user hasn't already purchased this music
-    (asserts! (is-none existing-purchase) err-already-purchased)
-    
+    (asserts! (is-none existing-purchase) err-already-purchased)  
     ;; Transfer payment to contract
     (try! (stx-transfer? (get price music-info) tx-sender contract-owner))
     
